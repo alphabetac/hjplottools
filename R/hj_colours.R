@@ -1,4 +1,4 @@
-hj_o_colors <- c(
+hj_o_colours <- c(
   paper = "#FFF1E5",
   black = "#000000",
   white = "#FFFFFF",
@@ -57,19 +57,38 @@ hj_o_colors <- c(
   `teal-100` = "#1AECFF"
 )
 
-hj_colors <- function(...){
+#' HJ Colours
+#'
+#' Get hex codes for plot colours.
+#'
+#' @param ... Names of the colours
+#'
+#' @details Use \code{hj_colours()} to see the full list of colours. This list
+#'   comes from
+#'   \href{https://registry.origami.ft.com/components/o-colors}{Origami
+#'   o-colors}.
+#' @examples
+#' # Full list
+#' hj_colours()
+#'
+#' # Choose colours
+#' hj_colours("paper")
+#' hj_colours("oxford", "claret")
+#'
+#' @export
+hj_colours <- function(...){
   cols <- c(...)
 
   if(is.null(cols)){
-    return(hj_o_colors)
+    return(hj_o_colours)
   }
 
-  not_found <- which(!(cols %in%  names(hj_o_colors)))
+  not_found <- which(!(cols %in%  names(hj_o_colours)))
   if(length(not_found) > 0){
-    warning(paste0("Could not find colors ",
+    warning(paste0("Could not find colours ",
                    paste0(cols[not_found], collapse = ", "),
                    ". Returned NAs instead.\n"))
   }
 
-  unname(hj_o_colors[cols])
+  unname(hj_o_colours[cols])
 }
