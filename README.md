@@ -42,7 +42,7 @@ mpg %>%
     y = "City Miles per Gallon"
   ) +
   
-  hj_theme()
+  hj_theme(base_size = 10)
 #> `geom_smooth()` using formula 'y ~ x'
 ```
 
