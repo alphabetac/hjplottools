@@ -30,10 +30,10 @@ hj_theme <- function(legend_right = FALSE,
                      base_rect_size = base_size / 170) {
 
   half_line <- base_size/2
-  grid_line_colour <- hj_colours("black-20")
+  grid_line_colour <- hj_cols("black-20")
   grid_line_size <- 0.2
-  title_text_colour <- hj_colours("black")
-  other_text_colour <- hj_colours("black-70")
+  title_text_colour <- hj_cols("black")
+  other_text_colour <- hj_cols("black-70")
 
   if(legend_right == TRUE){
     spec_legend_position <- "right"
@@ -54,7 +54,7 @@ hj_theme <- function(legend_right = FALSE,
     ggplot2::theme(
       plot.title = ggplot2::element_text(
         colour = title_text_colour,
-        size = ggplot2::rel(1.4),
+        size = ggplot2::rel(1.6),
         face = "bold",
         hjust = 0.5,
         margin = ggplot2::margin(b = half_line)
