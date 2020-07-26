@@ -1,5 +1,5 @@
 Package: hjplottools
-Title: Styles for Simple, Beautiful Plots
+Title: Make Plots Beautiful Again
 Version: 1.1
 Authors@R: 
     person(given = "Henry",

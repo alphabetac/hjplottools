@@ -2,4 +2,6 @@
 
 export(hj_cols)
 export(hj_theme)
+export(scale_color_hj)
+export(scale_fill_hj)
 importFrom(ggplot2,"%+replace%")

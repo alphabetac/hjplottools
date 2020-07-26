@@ -44,14 +44,15 @@ hj_colours <- c(
   `white-60` = "#FFF9F5",
   `white-80` = "#FFFCFA",
 
-  `claret-30` = "#4D081F",
-  `claret-40` = "#660A29",
-  `claret-50` = "#800D33",
-  `claret-60` = "#990F3D",
-  `claret-70` = "#B31247",
-  `claret-80` = "#CC1452",
-  `claret-90` = "#E6175C",
-  `claret-100` = "#FF1A66",
+  `rust-30` = "#F3602B",
+  `rust-40` = "#F25218",
+  `rust-50` = "#E7480D",
+  `rust-60` = "#D4420C",
+  `rust-70` = "#B8390B",
+  `rust-80` = "#AE360A",
+  `rust-90` = "#9A3009",
+  `rust-100` = "#872A08",
+
   `oxford-30` = "#082A4D",
   `oxford-40` = "#0A3866",
   `oxford-50` = "#0D4680",
@@ -108,6 +109,8 @@ hj_cols <- function(...){
 hj_palettes <- list(
   `main` = hj_cols("rust", "purple", "burnt_siena", "slate"),
   `reds` = hj_cols("rust", "russet", "sweet_brown", "tart_orange", "ruby_red", "max_red"),
+  `rusts` = hj_cols("rust-30", "rust-40", "rust-50", "rust-60", "rust-70",
+                    "rust-80", "rust-90", "rust-100"),
   `black` = hj_cols("black-5","black-10","black-20","black-30","black-40","black-50","black-60","black-70","black-80","black-90"),
   `white` = hj_cols("white-10","white-20","white-40","white-60","white-80")
   )
