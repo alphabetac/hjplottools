@@ -93,10 +93,14 @@ hj_theme <- function(legend_right = FALSE,
         size = grid_line_size
       ),
 
-      axis.line.y = ggplot2::element_blank(),
+      axis.line.y = ggplot2::element_line(color="black", size = 0.7),
       axis.ticks = ggplot2::element_line(
         colour = grid_line_colour,
         size = grid_line_size
+      ),
+      
+      axis.line.x = ggplot2::element_line(
+        colour = "black", size = 0.7
       ),
 
       axis.ticks.y = ggplot2::element_blank(),
@@ -127,6 +131,8 @@ hj_theme <- function(legend_right = FALSE,
       plot.margin = ggplot2::margin(1,1,1,1, unit = "char"),
       plot.title.position = "plot",
       plot.caption.position = "plot",
+      
+      plot.caption = element_text(hjust = 0)
 
       complete = TRUE
 
