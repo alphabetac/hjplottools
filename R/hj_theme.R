@@ -132,7 +132,7 @@ hj_theme <- function(legend_right = FALSE,
       plot.title.position = "plot",
       plot.caption.position = "plot",
       
-      plot.caption = element_text(hjust = 0)
+      plot.caption = element_text(hjust = 0),
 
       complete = TRUE
 
